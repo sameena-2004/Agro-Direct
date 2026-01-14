@@ -118,3 +118,8 @@ Include your preferred license here (e.g., MIT License).
 🙌 Acknowledgments
 
 Thanks to everyone who contributes and supports this project.
+
+👩‍💻 Author
+Sameena Pathan
+Data Science Student
+GitHub: https://github.com/sameena-2004
