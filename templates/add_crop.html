@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Crop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Add Crop</h2>
+    <form method="post">
+        <input name="crop" placeholder="Crop Name" required>
+        <input name="price" placeholder="Price" required>
+        <input name="quantity" placeholder="Quantity" required>
+        <button type="submit">Add</button>
+    </form>
+</div>
+</body>
+</html>

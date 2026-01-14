@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>Available Crops</h2>
+</header>
+
+<div class="container">
+    {% for c in crops %}
+    <div class="card">
+        <p><b>Crop:</b> {{ c.crop }}</p>
+        <p><b>Price:</b> ₹{{ c.price }}</p>
+        <p><b>Quantity:</b> {{ c.quantity }}</p>
+        <p><b>Farmer:</b> {{ c.name }}</p>
+        <p><b>Location:</b> {{ c.location }}</p>
+        <p><b>Contact:</b> {{ c.phone }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

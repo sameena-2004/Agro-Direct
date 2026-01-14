@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Farmer Registration</h2>
+    <form method="post">
+        <input name="name" placeholder="Farmer Name" required>
+        <input name="phone" placeholder="Phone Number" required>
+        <input name="location" placeholder="Village / District" required>
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>

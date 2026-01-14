@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>Welcome {{ farmer.name }}</h2>
+    <p>{{ farmer.location }} | {{ farmer.phone }}</p>
+</header>
+
+<div class="container">
+    <a class="btn" href="/add_crop/{{ farmer.id }}">Add Crop</a>
+
+    <h3>Your Crops</h3>
+    {% for c in crops %}
+    <div class="card">
+        <p><b>Crop:</b> {{ c.crop }}</p>
+        <p><b>Price:</b> ₹{{ c.price }}</p>
+        <p><b>Quantity:</b> {{ c.quantity }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
